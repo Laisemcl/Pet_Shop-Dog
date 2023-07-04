@@ -6,9 +6,119 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="fontwesome/css/all.css">
-</head>
-<body>
-    
-    
+    <link rel="stylesheet" href="assents/carrosel.css">
+    <link rel="stylesheet" href="assents/carrosel.js">
+    <link rel="stylesheet" href="assents/color-modes.js">
+    <link rel="stylesheet" href="assents/bootstrap.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kablammo&family=Kalam:wght@400;700&family=Kaushan+Script&family=Pacifico&family=Roboto:ital,wght@0,300;1,500;1,700&family=Shadows+Into+Light&display=swap');
+        header{
+            border: 1px;
+            border-style: outset;
+            background-color: lightseagreen;
+            margin-left: -10px;
+            margin-top: -10px;
+            margin-right: -10px;
+            padding: 20px;
+        
+        }
+        a{
+            text-decoration: none;
+        }
+        body{ 
+            background-color: lightblue;
+        }
+        li{
+            display: inline;
+            padding: 10px;
+            font-family: 'Kablammo', cursive;
+            
+            
+        }
+        #logo{
+            font-size: 50px;
+        }
+        .dog1{
+            margin-left: -10px;
+            margin-right: -730px;
+            position: absolute;
+            background-color: #c9beb5;
+            
+        }
+        .Pesquise{
+          display: flex;
+          text-align: right;
+          padding: 0;
+          height: 1rem;
+        }
+        nav.topo{
+          display: flex;
+          justify-content: space-between;
+        }
+        </style>
+          </head>
+          <body>
+              <header>
+                  <nav class="topo">
+                      <ul>
+                          <li> <a href="#"><i class="fa-solid fa-bars"> </i> </a></li>
+                          <li id="logo"> Pet <i class="fa-solid fa-paw"></i> ShAU </li> 
+                      </ul>  
+                      <div class="Pesquise">
+                        <input type="text" id="txtBusca" placeholder="Pesquise sua Raça..."> <i class="fa-solid fa-magnifying-glass"> </i>
+                      
+                  </nav>
+              </header>
+              <div class="dog1">
+              <img src="imagens/adoravel-cachorro-basenji-marrom-e-branco-sorrindo-e-dando-mais-uns-cinco-isolado-no-branco(1).jpg" width="40%"> 
+
+              </div>
+              <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel" data-bs-theme="light">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+                      <div class="container">
+                        <div class="carousel-caption text-start">
+                          <h1>Rações</h1>
+                          <p class="opacity-75">Os melhores Alimentos para seu Doguinho estão Aqui!!!</p>
+                          <p><a class="btn btn-lg btn-primary" href="#">Clique Aqui <i class="fa-solid fa-bone"></i></a></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+                      <div class="container">
+                        <div class="carousel-caption">
+                          <h1>Roupas/Acessórios</h1>
+                          <p>Seu Doguinho com o melhor Estilo!!!</p>
+                          <p><a class="btn btn-lg btn-primary" href="#">Clique Aqui <i class="fa-solid fa-shirt"></i></a></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+                      <div class="container">
+                        <div class="carousel-caption text-end">
+                          <h1>Serviços</h1>
+                          <p>Para um melhor cuidado com aquele que não te abandona!!! </p>
+                          <p><a class="btn btn-lg btn-primary" href="#">Clique Aqui <i class="fa-solid fa-shield-dog"></i></a></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
 </body>
 </html>
